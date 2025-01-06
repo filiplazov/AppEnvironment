@@ -31,7 +31,7 @@ public enum AppEnvironment: CustomStringConvertible {
     #if DEBUG
     self = .debug
     #elseif ENTERPRISE
-    self = .adhocRelease
+    self = .enterpriseRelease
     #elseif RELEASE
     self = .storeRelease
     #else
