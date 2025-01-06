@@ -11,10 +11,10 @@ public enum AppEnvironment: CustomStringConvertible {
 
   public var description: String {
     switch self {
-    case .debug:        return "Debug (likely local Xcode build)"
-    case .forceDebug:   return "Force Debug (TestFlight build used together with PerformanceCompanion app)"
-    case .enterpriseRelease: return "Enterprise (most likely an internal store build)"
-    case .storeRelease: return "Store (either a testflight or actual appstore release)"
+    case .debug:        return "Debug"
+    case .forceDebug:   return "Force Debug"
+    case .enterpriseRelease: return "Enterprise"
+    case .storeRelease: return "Store"
     }
   }
 
